@@ -16,6 +16,8 @@ export async function fetchProducts() {
     for (let i = 1; i <= 15; i++) {
         try {
             const response = await axios.get(`${baseURL}products/${i}`);
+               //https://api-db-json-products.vercel.app/products/2
+               //https://api-db-json-products.vercel.app/products/2
             products.push(response.data);
         } catch (error) {
             console.error(`Erro ao buscar o produto com ID ${i}`);
@@ -25,10 +27,5 @@ export async function fetchProducts() {
 }
 
 // Exemplo de como usar a função fetchProducts
-fetchProducts()
-    .then(products => {
-        console.log('Produtos:', products);
-    })
-    .catch(error => {
-        console.error('Erro ao buscar produtos:', error);
-    });
+fetchProducts();
+    
