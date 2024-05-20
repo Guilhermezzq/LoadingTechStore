@@ -15,7 +15,7 @@ export function Header() {
       <header className="w-full px-1 " style={{backgroundColor: '#6ca1ee' }} >
         <nav className="w-full max-w-7xl h-14 flex items-center justify-between px-5 mx-auto">
           <Link to="/" className="font-bold text-2xl">
-            Loading Tech
+            Loading Tech <span className="text-3xl text-white" >Store</span>
           </Link>
 
           <Link className="relative " to="/cart">
