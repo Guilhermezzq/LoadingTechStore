@@ -453,7 +453,7 @@ export function ProductDetail(){
 
 
   function handleAddItem(product: ProductProps){
-    toast.success("Produto adicionado no carrinho.", {
+    toast.success("Product added to cart.", {
       style:{
         borderRadius: 10,
         backgroundColor: "#121212",
