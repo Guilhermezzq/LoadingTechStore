@@ -507,7 +507,7 @@ export function Home() {
                     <BsCart4 size={30} color='#d1cddc' />
                   </button>
 
-                  <Link to={`/product/${product.id}`} > 
+                  <Link to={`/products/${product.id}`} > 
                   <button
                   className='bg-zinc-900 p-1 rounded' 
                   onClick={handleDescription}
