@@ -10,17 +10,23 @@ export const api = axios.create({
     
 });
 
-export async function fetchProducts() {
-    const baseURL = "https://api-db-json-products.vercel.app/";
+// Função para buscar os produtos
+async function fetchProducts() {
     const products = [];
     for (let i = 1; i <= 15; i++) {
         try {
-            const response = await axios.get(`${baseURL}products/${i}`);
-               //https://api-db-json-products.vercel.app/products/2
-               //https://api-db-json-products.vercel.app/products/2
-            products.push(response.data);
+            // Buscar o produto usando a baseURL original
+            const response = await api.get(`/products/${i}`);
+            const product = response.data;
+
+            // Agora que temos os dados básicos do produto, buscar a descrição em outra URL
+            const descriptionResponse = await axios.get(`https://loading-tech.vercel.app/products/${i}`);
+            // https://loading-tech.vercel.app/products/1
+            product.description = descriptionResponse.data; // Adicionar a descrição ao objeto do produto
+
+            products.push(product);
         } catch (error) {
-            console.error(`Erro ao buscar o produto com ID ${i}`);
+            console.error(`Erro ao buscar o produto com ID ${i}:`);
         }
     }
     return products;
@@ -28,4 +34,3 @@ export async function fetchProducts() {
 
 // Exemplo de como usar a função fetchProducts
 fetchProducts();
-    
