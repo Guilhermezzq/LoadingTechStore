@@ -2,7 +2,7 @@
 
 ### O projeto "Loading Tech Store" é uma loja virtual que oferece uma variedade de produtos de tecnologia. Ele consiste em duas partes principais: o front-end, que é a interface com o usuário onde os produtos são exibidos e os usuários podem interagir para fazer compras, e o back-end, que é responsável por fornecer os dados dos produtos e gerenciar as operações de CRUD (Create, Read, Update, Delete) por meio de uma API REST.
 
-No front-end, os usuários podem navegar pelos produtos que são Modelos 3D e você pode inspecionar e dar um zoom, visualizar detalhes de cada produto, como título, descrição e preço, e adicionar produtos ao carrinho de compras. A interface do usuário é projetada para ser intuitiva e responsiva, oferecendo uma experiência de compra agradável em diferentes dispositivos e tamanhos de tela.
+#### No front-end, os usuários podem navegar pelos produtos que são Modelos 3D e você pode inspecionar e dar um zoom, visualizar detalhes de cada produto, como título, descrição e preço, e adicionar produtos ao carrinho de compras. A interface do usuário é projetada para ser intuitiva e responsiva, oferecendo uma experiência de compra agradável em diferentes dispositivos e tamanhos de tela.
 
 Por trás da interface do usuário, o back-end é alimentado por uma API REST implementada com JSON Server. Esta API fornece endpoints para acessar os dados dos produtos, permitindo que o front-end recupere informações sobre os produtos disponíveis na loja. Além disso, a API também suporta operações de criação, atualização e exclusão de produtos, garantindo que a loja possa ser gerenciada de forma eficiente.
 
